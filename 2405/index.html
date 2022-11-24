@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: solid 1px #000;
+    }
+    button{
+        background-color: green;
+        color: #fff;
+        border: none;
+
+    }
+
+</style>
+<body>
+    <table>
+        <br/><br/><br/>
+    <h1>잡 매칭데이 채용세션 [6월23일,6월24일]</h1>
+    
+     <form method="post" action="index.php">
+
+        <tr><td>회사명 <br/></tr></td>
+        <td><input type="text" name="uname"></td><br/><br/>
+
+        <tr><td>참석인원<br/></tr></td>
+            <td><input type="text" name="upeople"></td><br/><br/>
+
+        <tr><td>회사 위치(예)강남, 판교, 성수 <br/></tr></td>
+            <td><input type="text" name="ugangnam"></td><br/><br/>
+
+        <tr><td>참석자 대표성함<br/></tr></td>
+            <td><input type="text" name="urname"><br/><br/><br/>
+        
+        <tr><td>채용분야(중복선택가능)<br/></tr></td>
+            <td><input type="checkbox" name="pick[]" value="sw">SW분야<br/>
+            <td><input type="checkbox" name="pick[]" value="design">Design분야 <br/><br/>
+
+        <tr><td>직책<br/></tr></td>
+         <td><input type="text" name="uboss"><br/><br/>
+
+            <tr><td>채용 예정인원<br/> </tr></td>
+                <td><input type="text" name="uinone"></td><br/><br/>
+
+                <tr><td>전화번호<br/></tr></td>
+                     <td><input type="text" name="unumber"</td><br/>
+
+         <tr><td><br/>참석날짜<br/></tr></td>
+         <tr><td><select name="sel">
+            <option value="day1[]">참석하실 날짜 선택해주세요</option>
+            <option value="day2[]">6월 23일</option>
+            <option value="day3[]">6월 24일</option>
+        </select><tr><td><br/><br/>
+
+        <tr><td>이메일<br/></tr></td>
+        <td><input type="text" name="uemail"></td> <br/> <br/>
+
+        <tr><td><button type="submit">SUBMIT</button></tr></td>
+        <tr><td><button type="submit">RESET</button></tr></td>
+
+    </table>
+    </form>
+</body>
+</html>
